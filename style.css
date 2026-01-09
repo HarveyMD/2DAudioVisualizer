@@ -1,0 +1,172 @@
+/* reset styles */      /* reset styles for all elements */
+* {
+    margin: 0; /* set margin to 0 */
+    padding: 0; /* set padding to 0 */
+    box-sizing: border-box; /* set box sizing to border box */
+}
+/* body styles */      /* body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* set font family to Segoe UI, Tahoma, Geneva, Verdana, sans-serif */
+    background: linear-gradient(135deg, #000000 0%, #764ba2 100%); /* set background to linear gradient */
+    min-height: 100vh; /* set min height to 100vh */
+    display: flex; /* set display to flex */
+    justify-content: center; /* set justify content to center */
+    align-items: center; /* set align items to center */
+    padding: 20px; /* set padding to 20px */
+}
+/* container styles */
+.container {
+    background: rgba(255, 255, 255, 0.1); /* set background to rgba */      
+    backdrop-filter: blur(10px); /* set backdrop filter to blur 10px */
+    border-radius: 20px; /* set border radius to 20px */
+    padding: 30px; /* set padding to 30px */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* set box shadow to 0 8px 32px 0 rgba(31, 38, 135, 0.37) */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* set border to 1px solid rgba(255, 255, 255, 0.18) */
+    text-align: center; /* set text align to center */
+    max-width: 900px; /* set max width to 900px */
+    width: 100%; /* set width to 100% */
+}
+/* h1 styles */      /* h1 styles */                    
+h1 {
+    color: white; /* set color to white */
+    margin-bottom: 20px; /* set margin bottom to 20px */
+    font-size: 2.5em; /* set font size to 2.5em */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* set text shadow to 2px 2px 4px rgba(0, 0, 0, 0.3) */
+}
+/* controls styles */      /* controls styles */                    
+.controls {
+    display: flex; /* set display to flex */        
+    gap: 15px; /* set gap to 15px */        
+    justify-content: center; /* set justify content to center */
+    flex-wrap: wrap; /* set flex wrap to wrap */
+    margin-bottom: 20px; /* set margin bottom to 20px */
+}
+/* btn styles */      /* btn styles */                    
+.btn {
+    padding: 12px 24px; /* set padding to 12px 24px */
+    font-size: 16px; /* set font size to 16px */
+    border: none; /* set border to none */
+    border-radius: 8px; /* set border radius to 8px */
+    background: rgba(255, 255, 255, 0.2); /* set background to rgba(255, 255, 255, 0.2) */
+    color: white; /* set color to white */
+    cursor: pointer; /* set cursor to pointer */
+    transition: all 0.3s ease; /* set transition to all 0.3s ease */
+    font-weight: 600; /* set font weight to 600 */
+    backdrop-filter: blur(5px); /* set backdrop filter to blur 5px */
+}
+/* btn hover styles */      /* btn hover styles */                    
+.btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.3); /* set background to rgba(255, 255, 255, 0.3) */
+    transform: translateY(-2px); /* set transform to translateY(-2px) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* set box shadow to 0 4px 12px rgba(0, 0, 0, 0.2) */
+}
+/* btn disabled styles */      /* btn disabled styles */                    
+.btn:disabled {
+    opacity: 0.5; /* set opacity to 0.5 */
+    cursor: not-allowed; /* set cursor to not allowed */
+}
+/* file input styles */      /* file input styles */                    
+.file-input {
+    display: none; /* set display to none */
+}
+/* file label styles */      /* file label styles */                    
+.file-label {
+    display: inline-block; /* set display to inline block */
+}
+/* canvas styles */      /* canvas styles */                    
+canvas {
+    display: block; /* set display to block */  
+    margin: 20px auto; /* set margin to 20px auto */
+    border-radius: 10px; /* set border radius to 10px */
+    background: rgba(255, 255, 255, 0.3); /* set background to rgba(255, 255, 255, 0.3) */  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* set box shadow to 0 4px 20px rgba(0, 0, 0, 0.3) */
+}
+/* info styles */      /* info styles */                    
+.info {
+    color: white; /* set color to white */
+    margin-top: 15px; /* set margin top to 15px */
+    font-size: 14px; /* set font size to 14px */
+    opacity: 0.9; /* set opacity to 0.9 */
+}
+/* info p styles */      /* info p styles */                    
+.info p {
+    margin: 5px 0; /* set margin to 5px 0 */
+}
+/* volume control styles */      /* volume control styles */                    
+.volume-control {
+    display: flex; /* set display to flex */
+    align-items: center; /* set align items to center */
+    justify-content: center; /* set justify content to center */
+    gap: 15px; /* set gap to 15px */
+    margin: 20px 0; /* set margin to 20px 0 */
+    padding: 15px; /* set padding to 15px */
+    background: rgba(255, 255, 255, 0.1); /* set background to rgba(255, 255, 255, 0.1) */  
+    border-radius: 10px; /* set border radius to 10px */
+    backdrop-filter: blur(5px); /* set backdrop filter to blur 5px */
+}
+/* volume label styles */      /* volume label styles */                    
+.volume-label {
+    color: white; /* set color to white */
+    font-weight: 600; /* set font weight to 600 */
+    font-size: 16px; /* set font size to 16px */
+}
+/* slider styles */      /* slider styles */                    
+.slider {
+    flex: 1; /* set flex to 1 */
+    max-width: 300px; /* set max width to 300px */
+    height: 8px; /* set height to 8px */
+    border-radius: 5px; /* set border radius to 5px */
+    background: rgba(255, 255, 255, 0.2); /* set background to rgba(255, 255, 255, 0.2) */
+    outline: none; /* set outline to none */
+    -webkit-appearance: none; /* set webkit appearance to none */
+    appearance: none; /* set appearance to none */
+}
+/* slider webkit slider thumb styles */      /* slider webkit slider thumb styles */                                
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* set webkit appearance to none */
+    appearance: none; /* set appearance to none */
+    width: 20px; /* set width to 20px */
+    height: 20px; /* set height to 20px */
+    border-radius: 50%; /* set border radius to 50% */
+    background: white; /* set background to white */
+    cursor: pointer; /* set cursor to pointer */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* set box shadow to 0 2px 6px rgba(0, 0, 0, 0.3) */
+    transition: all 0.2s ease; /* set transition to all 0.2s ease */
+}
+/* slider webkit slider thumb hover styles */      /* slider webkit slider thumb hover styles */                                
+.slider::-webkit-slider-thumb:hover {
+    transform: scale(1.1); /* set transform to scale(1.1) */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); /* set box shadow to 0 3px 8px rgba(0, 0, 0, 0.4) */
+}
+/* slider moz range thumb styles */      /* slider moz range thumb styles */                                
+.slider::-moz-range-thumb {
+    width: 20px; /* set width to 20px */
+    height: 20px; /* set height to 20px */
+    border-radius: 50%; /* set border radius to 50% */
+    background: white; /* set background to white */        
+    cursor: pointer; /* set cursor to pointer */
+    border: none; /* set border to none */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* set box shadow to 0 2px 6px rgba(0, 0, 0, 0.3) */
+    transition: all 0.2s ease; /* set transition to all 0.2s ease */
+}
+/* slider moz range thumb hover styles */      /* slider moz range thumb hover styles */                                
+.slider::-moz-range-thumb:hover {
+    transform: scale(1.1); /* set transform to scale(1.1) */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); /* set box shadow to 0 3px 8px rgba(0, 0, 0, 0.4) */
+}
+/* volume value styles */      /* volume value styles */                    
+.volume-value {
+    color: white; /* set color to white */  
+    font-weight: 600; /* set font weight to 600 */
+    min-width: 50px; /* set min width to 50px */
+    text-align: center; /* set text align to center */
+    font-size: 16px; /* set font size to 16px */
+}
+
+/* file name display styles */
+.file-name-display {
+    color: white; /* set color to white */
+    font-weight: 600; /* set font weight to 600 */
+    font-size: 16px; /* set font size to 16px */
+    margin-bottom: 20px; /* set margin bottom to 20px */
+}

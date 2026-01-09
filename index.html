@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- HTML5 document type declaration -->    
+<html lang="en"> <!-- HTML5 document language declaration -->    
+<head>
+    <meta charset="UTF-8"> <!-- HTML5 document character set declaration -->    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Audio Visualizer</title> <!-- HTML5 document title -->    
+    <link rel="stylesheet" href="style.css"> <!-- HTML5 document link to stylesheet -->    
+</head>
+<body>
+    <div class="container"> <!-- HTML5 document container -->    
+        <h1>2D Audio Visualizer</h1> <!-- HTML5 document heading -->    
+        <h2 id="fileNameDisplay" class="file-name-display"></h2>
+        <div class="controls">
+            <button id="startBtn" class="btn">Microphone</button> <!-- HTML5 document button -->    
+            <button id="stopBtn" class="btn" disabled>Stop</button> <!-- HTML5 document button -->    
+            <input type="file" id="fileInput" accept="audio/*" class="file-input"> <!-- HTML5 document input -->    
+            <label for="fileInput" class="btn file-label">Load Audio File</label> <!-- HTML5 document label -->    
+            <button id="playBtn" class="btn" disabled style="display: none;">▶ Play</button> <!-- HTML5 document button -->    
+            <button id="pauseBtn" class="btn" disabled style="display: none;">⏸ Pause</button> <!-- HTML5 document button -->    
+        </div>
+        <div class="volume-control" style="display: none;">
+            <label for="volumeSlider" class="volume-label">Volume:</label> <!-- HTML5 document label -->    
+            <input type="range" id="volumeSlider" min="0" max="100" value="100" class="slider"> <!-- HTML5 document input -->    
+            <span id="volumeValue" class="volume-value">100%</span> <!-- HTML5 document span -->        
+        </div>
+        <canvas id="visualizer"></canvas> <!-- HTML5 document canvas -->    
+        <div class="info">
+            <p>Click "Start" to use your microphone, or load an audio file to visualize.</p> <!-- HTML5 document paragraph -->    
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- HTML5 document script -->    
+</body>
+</html>
+
